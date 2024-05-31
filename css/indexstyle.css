@@ -7,11 +7,9 @@
 body{
     background-color: rgb(17, 14, 20);
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('https://img.freepik.com/free-photo/hex-textured-background-networking_23-2150080759.jpg?t=st=1717169824~exp=1717173424~hmac=f6cad0ec09da3b5f6b9504f6d474391b204fdd98b18694b517874308e5893e87&w=1060');
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the background image */
 }
+
+/* LATERAL MENU SECTIONS */
 #lateral-menu {
     position: static;
     top: 0;
@@ -39,13 +37,12 @@ body{
 }
 #lateral-menu.active button {
     transform: translateX(180px);
-    rotate: 180px;
 }
 
 #nav-menu {
     display: grid;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out; 
+    transition: opacity 0.3s ease-in-out;
 }
 
 #nav-menu.active {
@@ -62,4 +59,42 @@ body{
 #nav-menu ul li a {
     text-decoration: none;
     color: white;
+}
+
+/* CONTAINER SECTIONS */
+#Home{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start; /* Align items to the start of the flex container */
+    align-items: flex-start; /* Align items to the start of the cross axis (top) */
+}
+.large-container {
+    width: 90vw; 
+    height: 30vh;
+    margin-bottom: 0.5%;
+    padding: 20px; /* Add padding to the container */
+    background-color: rgba(255, 255, 255, 0.685); /* Semi-transparent white background */
+    border-radius: 10px; /* Add rounded corners */
+    text-align: center; /* Center the content inside the container */
+}
+.medium-container{
+    width: 44vw; 
+    height: 15vh;
+    margin-bottom: 0.5%;
+    margin-left: 2%;
+    padding: 20px; /* Add padding to the container */
+    background-color: rgba(255, 255, 255, 0.685); /* Semi-transparent white background */
+    border-radius: 10px; /* Add rounded corners */
+    text-align: center; /* Center the content inside the container */
+}
+
+.small-container {
+    width: 21.5vw; 
+    height: 10vh;
+    margin-bottom: 0.5%;
+    margin-left: 1%;
+    padding: 20px; /* Add padding to the container */
+    background-color: rgba(255, 255, 255, 0.685); /* Semi-transparent white background */
+    border-radius: 10px; /* Add rounded corners */
+    text-align: center; /* Center the content inside the container */
 }
