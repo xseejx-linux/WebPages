@@ -2,19 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background-color: rgb(17, 14, 20);
     min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('https://img.freepik.com/free-photo/hex-textured-background-networking_23-2150080759.jpg?t=st=1717169824~exp=1717173424~hmac=f6cad0ec09da3b5f6b9504f6d474391b204fdd98b18694b517874308e5893e87&w=1060');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
 }
 #lateral-menu {
     position: static;
     top: 0;
     left: 0;
     width: 25px;
-    height: 100%;
+    height: 100vh;
     background-color: black;
-
+    transition: width 0.3s; /* Transition for width change */
 }
 
 #lateral-menu button {
@@ -27,4 +32,34 @@ body{
     color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: larger;
+    transition: transform 0.3s; /* Transition for transform change */
+}
+#lateral-menu.active {
+    width: 200px; /* Adjust expanded width as needed */
+}
+#lateral-menu.active button {
+    transform: translateX(180px);
+    rotate: 180px;
+}
+
+#nav-menu {
+    display: grid;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+#nav-menu.active {
+    opacity: 1; /* Set opacity to 1 when active */
+}
+#nav-menu ul {
+    overflow: hidden;
+    list-style: none;
+}
+#nav-menu ul li {
+    padding: 10px;
+}
+
+#nav-menu ul li a {
+    text-decoration: none;
+    color: white;
 }
