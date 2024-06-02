@@ -150,7 +150,7 @@ body{
 }
 
 .slide .custom-link {
-    z-index: 100;
+    z-index: 1;
     position: absolute;
     color: white;
     background: rgba(0, 0, 0, 0.5);

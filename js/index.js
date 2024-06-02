@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Select all image elements within the slideshow container
     const slides = document.querySelectorAll('.slideshow img');
     const customLinks = document.querySelectorAll('.custom-link');
+    const customP = document.querySelectorAll('.custom-p');
     const prevButton = document.getElementById('prev-slide');
     const nextButton = document.getElementById('next-slide');
 
@@ -42,11 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 slide.classList.add('active');
                 // Remove the 'hidden' class from the corresponding custom link
                 customLinks[i].classList.remove('hidden');
+                customP[i].classList.remove('hidden');
             } else {
                 // If the index does not match the current slide index, remove the 'active' class from the slide
                 slide.classList.remove('active');
                 // Add the 'hidden' class to the corresponding custom link
                 customLinks[i].classList.add('hidden');
+                customP[i].classList.add('hidden');
             }
         });
     }
@@ -67,10 +70,19 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentSlide);
     }
 
+    // Function to automatically move to the next slide
+    function autoNextSlide() {
+        // Move to the next slide
+        nextSlide();
+    }
+
     // Initially, show the first slide when the page loads
     showSlide(currentSlide);
 
     // Set event listeners for the previous and next buttons
     prevButton.addEventListener('click', prevSlide);
     nextButton.addEventListener('click', nextSlide);
+
+    // Automatically move to the next slide every 5 seconds
+    setInterval(autoNextSlide, 5000);
 });
