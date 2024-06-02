@@ -136,11 +136,13 @@ body{
     top: 0;
     left: 0;
     opacity: 0;
+    z-index: -2;
     transition: opacity 0.5s ease-in-out; /* Add transition for opacity change */
 }
 
 .large-container .slideshow img.active {
     opacity: 1; /* Set opacity to 1 for active image */
+    z-index: 1;
 }
 
 /* SLIDESHOW */
