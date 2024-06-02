@@ -20,52 +20,60 @@
 </head>
 
 <body>      
+    <!-- LATERAL MENU -->
     <div id="lateral-menu" style="float: left; margin-right: 1vw;">        
         <button id="menu-toggle"><strong>></strong></button>
         <nav id="nav-menu">
-            <p style="top:12px; left:5%; overflow: hidden; font-size: larger; position: absolute; color: white;">MENU</p>
+            <p style="top:12px; left:5%; overflow: hidden; font-size: larger; position: absolute; color: white; pointer-events: none;">MENU</p>
             <ul id="nav-menu-list">
+                <!-- LATERAL MENU NAV -->
                 <li id="nav-menu-list"><a href="#Home">Home</a></li>
+                <li id="nav-menu-list"><a href="#Topics">Genders</a></li>
                 <li id="nav-menu-list"><a href="#About">About</a></li>
             </ul>
         </nav>        
     </div> 
+    
 
-    <div id="Home">
-        <!--- Header --->
-        <div style="top:5%; padding: 1%;"></div>
-
+    <div id="Home" style="align-items: center; justify-content: center;">
+        <!--- Header --->        
+        <div class="header">
+            <h1 class="header">Best Game Ever</h1>
+        </div>
+        
         <!--- Large Container --->
-        <div class="large-container">
+        <div class="large-container" style="margin-left: 2%; ">
+             <!-- Previous Slide Button -->
+             <button id="prev-slide"  style="z-index: 100; border:0px; padding: 2px; border-radius: 25%; background-color: rgba(107, 102, 102, 0.719); font-size: larger; "><-</button>
+             <!-- Next Slide Button -->
+             <button id="next-slide" style="z-index: 100; border:0px; padding: 2px; border-radius: 25%; background-color: rgba(107, 102, 102, 0.719); font-size: larger; ">-></button>
+
             <div class="slideshow">
-                <img src="" alt="Image 1">
-                <img src="" alt="Image 2">
-                <img src="" alt="Image 3">
+
+                <div class="slide">
+                    <img src="../img/RDR2.png" alt="RDR2">
+                    <a href="" class="custom-link" style="padding: 20px 25px; bottom: 30%; right: 10%;">ABOUT RED DEAD REDEMPTION II</a>
+                   
+                </div>
+                <div class="slide">
+                    <img src="" alt="Image 2">
+                    <a href="" class="custom-link" style="padding: 20px 25px; bottom: 30%; right: 10%;">HELP</a>
+                </div>
             </div>
         </div>
+
+        <!--- Header --->        
+        <div class="header">
+            <h1 class="header">Speacial Topic</h1>
+        </div>
+
         <!--- Medium Container --->
-        <div class="medium-container">
+        <div class="medium-container" style="height: 50vh;">
             <h1>Container Medium</h1>
         </div>
         <!--- Medium Container --->
-        <div class="medium-container">
+        <div class="medium-container" style="height: 50vh;">
             <h1>Container Medium</h1>
-        </div>
-        <!--- Small Container --->
-        <div class="small-container" style=" margin-left: 2%;">
-            <h1>Container Small</h1>
-        </div>
-        <!--- Small Container --->
-        <div class="small-container">
-            <h1>Container Small</h1>
-        </div>
-        <!--- Small Container --->
-        <div class="small-container" style=" margin-left: 2%;">
-            <h1>Container Small</h1>
-        </div>
-        <!--- Small Container --->
-        <div class="small-container">
-            <h1>Container Small</h1>
         </div>
     </div>
      

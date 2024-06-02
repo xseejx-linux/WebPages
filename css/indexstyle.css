@@ -7,11 +7,14 @@
 body{
     background-color: rgb(17, 14, 20);
     min-height: 100vh;
+    height: 10000000px;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 /* LATERAL MENU SECTIONS */
 #lateral-menu {
-    position: static;
+    position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 25px;
@@ -34,6 +37,8 @@ body{
 }
 #lateral-menu.active {
     width: 200px; /* Adjust expanded width as needed */
+    z-index: 100;
+    pointer-events: auto;
 }
 #lateral-menu.active button {
     transform: translateX(180px);
@@ -68,13 +73,31 @@ body{
     justify-content: flex-start; /* Align items to the start of the flex container */
     align-items: flex-start; /* Align items to the start of the cross axis (top) */
 }
+
+#Home.active{
+    position: static;
+    z-index: -1;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.header h1 {
+    color: white;
+    font-size: 24px;
+    padding-left: 3%;
+}
 .large-container {
     width: 90vw; 
-    height: 30vh;
+    height: 35vh;
     margin-bottom: 0.5%;
-    padding: 20px; /* Add padding to the container */
-    background-color: rgba(255, 255, 255, 0.685); /* Semi-transparent white background */
-    border-radius: 10px; /* Add rounded corners */
+    padding: 0px; /* Add padding to the container */
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent white background */
+    border-radius: 15px; /* Add rounded corners */
     text-align: center; /* Center the content inside the container */
 }
 .medium-container{
@@ -118,4 +141,23 @@ body{
 
 .large-container .slideshow img.active {
     opacity: 1; /* Set opacity to 1 for active image */
+}
+
+/* SLIDESHOW */
+
+.slide img{
+    border-radius: 5px;
+}
+
+.slide .custom-link {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.custom-link.hidden{
+    display: none;
 }
