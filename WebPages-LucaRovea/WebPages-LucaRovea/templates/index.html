@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Blog</title>
+    <meta name="description" content="Blog dedicated to video game reviews.">
+    <meta name="keywords" content="video games, game reviews, gaming news, game guides">
+    <meta name="author" content="@Luca">
+
+    <!-- WebIcon -->
+    <link rel="icon" href="../ico/TitlePage.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/indexstyle.css">
+
+    <!-- JS -->
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body>      
+    <!-- LATERAL MENU -->
+    <div id="lateral-menu" style="float: left; margin-right: 1vw;">        
+        <button id="menu-toggle"><strong>></strong></button>
+        <nav id="nav-menu">
+            <p style="top:12px; left:5%; overflow: hidden; font-size: larger; position: absolute; color: white; pointer-events: none;">MENU</p>
+            <ul id="nav-menu-list">
+                <!-- LATERAL MENU NAV -->
+                <li id="nav-menu-list"><a href="#Home">Home</a></li>
+                <li id="nav-menu-list"><a href="#Topics">Genders</a></li>
+                <li id="nav-menu-list"><a href="#About">About</a></li>
+            </ul>
+        </nav>        
+    </div> 
+    
+
+    <div id="Home" style="align-items: center; justify-content: center;">
+        <!--- Header --->        
+        <div class="header">
+            <h1 class="header">Best Game Ever</h1>
+        </div>
+        
+        <!--- Large Container --->
+        <div class="large-container" style="margin-left: 2%;">
+             <!-- Previous Slide Button -->
+             <button id="prev-slide"  style="position: absolute; z-index: 1; border:0px; padding: 10px; height: 35%; border-radius: 1%; background-color: rgba(107, 102, 102, 0.719); color: white; font-size: larger; left: 4%;"><</button>
+             <!-- Next Slide Button -->
+             <button id="next-slide" style="position: absolute; z-index: 1; border:0px; padding: 10px; height: 35%; border-radius: 1%; background-color: rgba(107, 102, 102, 0.719); color: white; font-size: larger; right: 2%;">></button>
+
+            <div class="slideshow">
+
+                <div class="slide">
+                    <img src="../img/RDR2.jpeg" alt="RDR2">
+                    <a href="" class="custom-link" style="display: none; padding: 20px 25px; bottom: 30%; right: 10%;">ABOUT RED DEAD REDEMPTION II</a>
+                </div>
+                <div class="slide">
+                    <img src="../img/SMB.jpeg" alt="Image 2">
+                    <a href="" class="custom-link" style="display: none; padding: 20px 25px; bottom: 30%; right: 10%;">ABOUT SUPER MARIO BROS</a>
+                </div>
+                <div class="slide">
+                    <img src="../img/OLT.jpeg" alt="Image 3">
+                    <a href="" class="custom-link" style="display: none; padding: 20px 25px; bottom: 30%; right: 10%;">ABOUT OUT LAST</a>
+                </div>
+                <div class="slide">
+                    <img src="../img/MCF.jpeg" alt="Image 4">
+                    <a href="" class="custom-link" style="display: none; padding: 20px 25px; bottom: 30%; right: 10%;">ABOUT MINECRAFT</a>
+                </div>
+                <div class="slide">
+                    <img src="../img/CSG.jpeg" alt="Image 5">
+                    <a href="" class="custom-link" style="display: none; padding: 20px 25px; bottom: 30%; right: 10%;">ABOUT COUNTER STRIKE GLOBAL OFFENSIVE</a>
+                </div>
+                <div class="slide">
+                    <img src="../img/STF.jpeg" alt="Image 6">
+                    <a href="" class="custom-link" style="display: none; padding: 20px 25px; bottom: 30%; right: 10%;">ABOUT STREET FIGHTER</a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="../img/TMB.jpeg" alt="Image 7"></a>
+                    <a href="" class="custom-link" style="display: none; padding: 20px 25px; bottom: 30%; right: 10%;">ABOUT TOMB RAIDER</a>
+                </div>
+            </div>
+        </div>
+
+        <!--- Header --->        
+        <div class="header">
+            <h1 class="header">Speacial Topic</h1>
+        </div>
+
+        <!--- Medium Container --->
+        <div class="medium-container" style="height: 50vh;">
+            <h1>Container Medium</h1>
+        </div>
+        <!--- Medium Container --->
+        <div class="medium-container" style="height: 50vh;">
+            <h1>Container Medium</h1>
+        </div>
+        <!--- Header --->        
+        
+    </div>
+    <div id="Topics">
+        <div class="header">
+            <h1 class="header">Genders</h1>
+        </div>
+        <!--- Small Container --->
+        <div class="small-container" style="margin-left: 5.5%;">
+            <h1>Container Small</h1>
+        </div>
+    </div>
+
+</body>
+</html>
