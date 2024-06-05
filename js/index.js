@@ -3,14 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var menuToggle = document.getElementById('menu-toggle');
     var navMenu = document.getElementById('nav-menu');
     var lateralMenu = document.getElementById('lateral-menu');
-    var home = document.getElementById('Home');
     var body = document.body;
     
     menuToggle.addEventListener('click', function() {
         navMenu.classList.toggle('active');
         lateralMenu.classList.toggle('active');
         menuToggle.classList.toggle('active');
-        home.classList.toggle('active');
         body.classList.toggle('active');
         
         // Update button text based on menu state

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Duty (COD)</title>
+    <link rel="stylesheet" href="../css/indexstyle.css">
+    <!-- Facciamo uno per code e poi manteniamo lo style per il main (quiindi il Test.css che hai fotut)-->
+    <link rel="stylesheet" href="../css/codstyle.css">
+    <!-- JS Script -->
+   <script src="../js/index.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background: url('../img/COD/sfondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 1em;
+        }
+        .image-container, .description-container {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            margin: 1em;
+            padding: 1em;
+            border: 1px solid transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 15px; /* Angoli tondi */
+        }
+        .image-container {
+            flex-basis: calc(33.333% - 2em);
+        }
+        .description-container {
+            padding: 2em;
+            flex-basis: 100%;
+            font-family: 'Arial', serif; /* Carattere elegante per la descrizione */
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px; /* Angoli tondi per le immagini */
+        }
+        a:link, a:visited {
+            color:greenyellow;
+            text-decoration:none;
+        }
+        a:hover{
+            font-size:35px;
+            text-decoration:none;
+        }
+        @media (max-width: 768px) {
+            .image-container {
+                flex-basis: calc(50% - 2em);
+            }
+        }
+        @media (max-width: 480px) {
+            .image-container {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- LATERAL MENU -->
+    <div id="lateral-menu" style="float: left; margin-right: 1vw;">        
+        <button id="menu-toggle"><strong>></strong></button>
+        <nav id="nav-menu">
+            <p style="top:12px; left:5%; overflow: hidden; font-size: larger; position: absolute; color: white; pointer-events: none;">MENU</p>
+            <ul id="nav-menu-list">
+                <!-- LATERAL MENU NAV -->
+                <li id="nav-menu-list"><a href="#Home">Home</a></li>
+                <li id="nav-menu-list"><a href="#Topics">Genders</a></li>
+                <li id="nav-menu-list"><a href="#About">About</a></li>
+            </ul>
+        </nav>        
+    </div>
+    <header>
+        <h1>Call of Duty (COD)</h1>
+        <p>Scopri il fantastico mondo di Call of Duty, il gioco di guerra più popolare.</p>
+    </header>
+    <div class="container">
+        <div class="image-container">
+            <img src="../img/COD/immagine1.jpg" alt="Immagine di COD 1">
+        </div>
+        <div class="image-container">
+            <img src="../img/COD/immagine2.gif" alt="Immagine di COD 2">
+        </div>
+        <div class="description-container" style="font-size: 30px;">
+            <p>Call of Duty è una serie di videogiochi sparatutto in prima persona a tema bellico, sviluppata inizialmente da Infinity Ward e successivamente da altri studi. Il gioco si caratterizza per la sua intensa esperienza di combattimento, grafica realistica e trame coinvolgenti. Dalle campagne ambientate nella Seconda Guerra Mondiale alle battaglie futuristiche, COD ha saputo reinventarsi e mantenere alto l'interesse dei giocatori di tutto il mondo. La serie è celebre anche per il suo multigiocatore, che offre mappe dinamiche, numerose modalità di gioco e una comunità di appassionati sempre attiva.
+                Clicca <a href="https://www.callofduty.com/it" target="_blank">qui</a> per maggiori informazioni.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
