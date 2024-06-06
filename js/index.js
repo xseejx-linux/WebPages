@@ -1,11 +1,14 @@
 // Lateral Bar Button Function //
+
 document.addEventListener('DOMContentLoaded', function(){
+
     var menuToggle = document.getElementById('menu-toggle');
     var navMenu = document.getElementById('nav-menu');
     var lateralMenu = document.getElementById('lateral-menu');
     var home = document.getElementById('Home');
     var body = document.body;
     
+
     menuToggle.addEventListener('click', function(){
         navMenu.classList.toggle('active');
         lateralMenu.classList.toggle('active');
@@ -13,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if(home){
             home.classList.toggle('active');
         }
+
         body.classList.toggle('active');
         
         // Update button text based on menu state
@@ -37,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentSlide = 0;
 
     // Function to show a specific slide by adding or removing the 'active' class
+
     function showSlide(index){
         slides.forEach((slide, i) => {
             if(i === index){
@@ -54,29 +59,35 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Function to move to the previous slide
+
     function prevSlide(){
         if (currentSlide === 0) {
             currentSlide = slides.length - 1; // Set to last slide if currently at the first slide
         } else {
             currentSlide--; // Otherwise, decrement the current slide index
         }
+
         // Show the previous slide
         showSlide(currentSlide);
     }
 
     // Function to move to the next slide
+
     function nextSlide(){
         if (currentSlide === slides.length - 1) {
             currentSlide = 0; // Set to first slide if currently at the last slide
         } else {
             currentSlide++; // Otherwise, increment the current slide index
         }
+
         // Show the next slide
         showSlide(currentSlide);
     }
 
     // Function to automatically move to the next slide
+
     function autoNextSlide(){
+
         // Move to the next slide
         nextSlide();
     }
