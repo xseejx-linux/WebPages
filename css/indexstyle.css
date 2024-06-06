@@ -178,12 +178,14 @@ body{
 
 #medium-container-1 .imgshow:hover{
     transition: 0.5s;
-    box-shadow: 0 0 15px rgb(255, 94, 0);
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
 #medium-container-2 .imgshow:hover{
     transition: 0.5s;
-    box-shadow: 0 0 15px rgb(0, 47, 255);
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    border-radius: 10px;
 }
 /* SLIDESHOW */
 
