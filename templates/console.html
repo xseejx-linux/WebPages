@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console per Videogiochi</title>
+    <!-- WebIcon -->
+    <link rel="icon" href="../img/InitPages/console/console.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/indexstyle.css">
+    
+    <link rel="stylesheet" href="../css/codstyle.css">
+    <!-- JS Script -->
+   <script src="../js/index.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('../img/InitPages/console/sfondoconsole.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 1em;
+        }
+        .console-container {
+            background-color: rgba(255, 255, 255, 0.3); /* Sfondo semi-trasparente */
+            backdrop-filter: blur(10px); /* Applica lo sfondo sfocato */
+            margin: 1em;
+            padding: 1em;
+            border: 1px solid transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            border-radius: 15px;
+            width: calc(33.333% - 2em);
+        }
+        .description-container{
+            background-color: rgba(255, 255, 255, 0.3); /* Sfondo semi-trasparente */
+            backdrop-filter: blur(10px); /* Applica lo sfondo sfocato */
+            margin: 1em;
+            padding: 1em;
+            border: 1px solid transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            border-radius: 15px;
+            width: calc(100% - 2em);
+        }
+        .console-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px; /* Angoli tondi per le immagini */
+        }
+        .console-description {
+            margin-top: 1em;
+        }
+        .description-container {
+            padding: 2em;
+            flex-basis: 100%;
+            font-family: 'Arial', serif; /* Carattere elegante per la descrizione */
+        }
+        a:link, a:visited {
+            color:greenyellow;
+            text-decoration:none;
+        }
+        a:hover{
+            font-size:35px;
+            text-decoration:none;
+        }
+        @media (max-width: 768px) {
+            .console-container {
+                flex-basis: calc(50% - 2em);
+            }
+        }
+        @media (max-width: 480px) {
+            .console-container {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- LATERAL MENU -->
+    <div id="lateral-menu" style="float: left; margin-right: 1vw;">        
+        <button id="menu-toggle"><strong>></strong></button>
+        <nav id="nav-menu">
+            <p style="top:12px; left:5%; overflow: hidden; font-size: larger; position: absolute; color: white; pointer-events: none;">MENU</p>
+            <ul id="nav-menu-list">
+                <!-- LATERAL MENU NAV -->
+                <li id="nav-menu-list"><a href="index.html" target="_blank;">Home</a></li>
+                <li id="nav-menu-list"><a href="About.html" target="_blank;">About</a></li>
+            </ul>
+        </nav>        
+    </div>
+    <header>
+        <h1>Console per Videogiochi</h1>
+        <p>Scopri le ultime console per videogiochi: Xbox, Nintendo e PlayStation.</p>
+    </header>
+    <div class="container">
+        <!-- Console Xbox -->
+        <div class="console-container">
+            <h2>Xbox</h2>
+            <img src="../img/InitPages/console/xbox.jpg" alt="Xbox">
+            <div class="console-description">
+                <p>Xbox è una famiglia di console per videogiochi sviluppata da Microsoft, con una vasta libreria di giochi esclusivi e funzionalità multimediali avanzate.</p>
+            </div>
+        </div>
+        <!-- Console Nintendo -->
+        <div class="console-container">
+            <h2>Nintendo</h2>
+            <img src="../img/InitPages/console/nintendo.jpg" alt="Nintendo">
+            <div class="console-description">
+                <p>Nintendo è un'azienda giapponese famosa per le sue console innovative e giochi iconici come Mario, Zelda e Pokémon.</p>
+            </div>
+        </div>
+        <!-- Console PlayStation -->
+        <div class="console-container">
+            <h2>PlayStation</h2>
+            <img src="../img/InitPages/console/playstation.jpg" alt="PlayStation">
+            <div class="console-description">
+                <p>PlayStation è una serie di console per videogiochi sviluppata da Sony, con una potente grafica e una vasta comunità di giocatori in tutto il mondo.</p>
+            </div>
+        </div>
+    </div>
+     <!-- Storie delle Console -->
+     <div class="description-container" style="font-size: 30px; text-align: left;">
+        <h2 style="font-size: 30px; text-align: center;">Storie delle Console</h2>
+        <p>Le console per videogiochi hanno una lunga storia di innovazione e divertimento. Da quando le prime console sono entrate sul mercato negli anni '70, hanno continuato a evolversi e adattarsi alle esigenze dei giocatori. Le tre principali console, Xbox, Nintendo e PlayStation, hanno ciascuna contribuito in modo significativo alla cultura dei videogiochi.</p>
+        <p>Xbox è stata lanciata da Microsoft nel 2001, competendo con successo con PlayStation di Sony e Nintendo. Con una serie di console, inclusa la popolare Xbox 360 e l'attuale Xbox Series X, Xbox ha guadagnato una solida reputazione per le sue potenti prestazioni e il suo ecosistema di gioco online.</p>
+        <p>Nintendo, con la sua innovazione e creatività, ha introdotto alcune delle console più iconiche della storia dei videogiochi. Dal classico NES al rivoluzionario Nintendo Switch, Nintendo ha catturato l'immaginazione dei giocatori di tutte le età con le sue esclusive e innovative esperienze di gioco.</p>
+        <p>PlayStation è diventata una forza dominante nell'industria dei videogiochi sin dal suo lancio nel 1994. Con una libreria impressionante di giochi esclusivi e una solida base di fan, PlayStation ha stabilito nuovi standard per la grafica e l'esperienza di gioco.</p>
+        <p style="font-size: 30px; text-align: center;">Sito ufficiale <a style="color:blue;" href="https://www.playstation.com/it-it/" target="_blank">PlayStation</a>.</p>
+        <p style="font-size: 30px; text-align: center;">Sito ufficiale <a href="https://www.xbox.com/it-IT" target="_blank">Xbox</a>.</p>
+        <p style="font-size: 30px; text-align: center;">Sito ufficiale <a style="color:red;" href="https://www.nintendo.com/it-it/" target="_blank">Nintendo</a>.</p>
+    </div>
+</body>
+</html>
