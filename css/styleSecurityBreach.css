@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Hide the images by default */
+.hover-image {
+    display: none;
+    pointer-events: none;
+    position: absolute; /* Ensure the image appears near the text */
+    margin-left: 10px; /* Adjust the position as needed */
+    z-index: 1; /* Ensure the image appears above other elements */
+}
+
+/* Specific styling for clickable text */
+.clickable {
+    position: relative;
+    padding: 0px;
+    cursor: pointer; /* Indicate that the text is interactable */
+}
