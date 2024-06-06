@@ -83,3 +83,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Automatically move to the next slide every 5 seconds
     setInterval(autoNextSlide, 5000);
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const clickableTexts = document.querySelectorAll('.clickable');
+    const images = document.querySelectorAll('.hover-image');
+
+    clickableTexts.forEach((clickableText, index) => {
+        const image = clickableText.nextElementSibling;
+        
+        clickableText.addEventListener('click', () => {
+            if (image.style.display === 'none' || image.style.display === '') {
+                image.style.display = 'inline';
+            } else {
+                image.style.display = 'none';
+            }
+        });
+    });
+});
