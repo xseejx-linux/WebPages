@@ -1,0 +1,28 @@
+body{
+    height: 130vh;
+}
+.box {
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    height: 350px;
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 5px;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* If you want to stack elements vertically */
+    float: left;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+.box h4{
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+.box-text{
+    margin-left: -10px;
+}
+.item-list{
+    margin-bottom: 20px ;
+}
