@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@ferryjjo">
+    <title>CS:GO</title>
+    <link rel="stylesheet" href="../css/indexstyle.css">
+
+    <!-- WebIcon -->
+    <link rel="icon" href="../img/InitPages/CSGO/mood-player-csgo-phoenix-300.webp" type="image/x-icon">
+    
+    <link rel="stylesheet" href="../css/codstyle.css">
+    <!-- JS Script -->
+   <script src="../js/index.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background: url('../img/InitPages/CSGO/sfondo.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 1em;
+        }
+        .image-container, .description-container {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            margin: 1em;
+            padding: 1em;
+            border: 1px solid transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 15px; /* Angoli tondi */
+        }
+        .image-container {
+            flex-basis: calc(33.333% - 2em);
+        }
+        .description-container {
+            padding: 2em;
+            flex-basis: 100%;
+            font-family: 'Arial', serif; /* Carattere elegante per la descrizione */
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px; /* Angoli tondi per le immagini */
+        }
+        a:link, a:visited {
+            color:greenyellow;
+            text-decoration:none;
+        }
+        a:hover{
+            font-size:35px;
+            text-decoration:none;
+        }
+        @media (max-width: 768px) {
+            .image-container {
+                flex-basis: calc(50% - 2em);
+            }
+        }
+        @media (max-width: 480px) {
+            .image-container {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- LATERAL MENU -->
+    <div id="lateral-menu" style="float: left; margin-right: 1vw;">        
+        <button id="menu-toggle"><strong>></strong></button>
+        <nav id="nav-menu">
+            <p style="top:12px; left:5%; overflow: hidden; font-size: larger; position: absolute; color: white; pointer-events: none;">MENU</p>
+            <ul id="nav-menu-list">
+                <!-- LATERAL MENU NAV -->
+                <li id="nav-menu-list"><a href="index.html" target="_blank;">Home</a></li>
+                <li id="nav-menu-list"><a href="About.html" target="_blank;">About</a></li>
+            </ul>
+        </nav>        
+    </div>
+    <header>
+        <h1>CS:GO</h1>
+        <p>Scopri l'intenso mondo di Counter-Strike: Global Offensive, il gioco che ha ridefinito gli sparatutto tattici in prima persona.</p>
+    </header>
+    <div class="container">
+        <div class="image-container">
+            <img src="../img/InitPages/CSGO/immagine1.jpg" alt="Immagine di CSGO 1">
+        </div>
+        <div class="image-container">
+            <img src="../img/InitPages/CSGO/immagine2.gif" alt="Immagine di CSGO 2">
+        </div>
+        <div class="description-container" style="font-size: 30px;">
+            <p>Counter-Strike: Global Offensive (CS:GO) è un videogioco sparatutto tattico in prima persona sviluppato da Valve Corporation e Hidden Path Entertainment. Lanciato nel 2012, CS:GO è diventato uno dei giochi competitivi più popolari al mondo, offrendo modalità di gioco avvincenti e un intenso gameplay basato sulla squadra. I giocatori possono partecipare a partite competitive, modalità casuali, e varie operazioni speciali, perfezionando le loro abilità e strategie. Con aggiornamenti regolari e un'enorme comunità di giocatori, CS:GO continua a evolversi mantenendo una base di fan devota. 
+                Clicca <a href="https://blog.counter-strike.net/" target="_blank">qui</a> per maggiori informazioni.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
