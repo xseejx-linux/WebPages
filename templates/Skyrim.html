@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@ferryjjo">
+    <title>The Elder Scrolls V: Skyrim</title>
+    <link rel="stylesheet" href="../css/indexstyle.css">
+
+    <!-- WebIcon -->
+    <link rel="icon" href="../img/InitPages/Skyrim/scheda.jpg" type="image/x-icon">
+    
+    <link rel="stylesheet" href="../css/codstyle.css">
+    <!-- JS Script -->
+    <script src="../js/index.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background: url('../img/InitPages/Skyrim/sfondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 1em;
+        }
+        .image-container, .description-container {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            margin: 1em;
+            padding: 1em;
+            border: 1px solid transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 15px; /* Angoli tondi */
+        }
+        .image-container {
+            flex-basis: calc(33.333% - 2em);
+        }
+        .description-container {
+            padding: 2em;
+            flex-basis: 100%;
+            font-family: 'Arial', serif; /* Carattere elegante per la descrizione */
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px; /* Angoli tondi per le immagini */
+        }
+        a:link, a:visited {
+            color: greenyellow;
+            text-decoration: none;
+        }
+        a:hover{
+            font-size: 35px;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .image-container {
+                flex-basis: calc(50% - 2em);
+            }
+        }
+        @media (max-width: 480px) {
+            .image-container {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- LATERAL MENU -->
+    <div id="lateral-menu" style="float: left; margin-right: 1vw;">        
+        <button id="menu-toggle"><strong>></strong></button>
+        <nav id="nav-menu">
+            <p style="top: 12px; left: 5%; overflow: hidden; font-size: larger; position: absolute; color: white; pointer-events: none;">MENU</p>
+            <ul id="nav-menu-list">
+                <!-- LATERAL MENU NAV -->
+                <li id="nav-menu-list"><a href="index.html" target="_blank;">Home</a></li>
+                <li id="nav-menu-list"><a href="About.html" target="_blank;">About</a></li>
+            </ul>
+        </nav>        
+    </div>
+    <header>
+        <h1>The Elder Scrolls V: Skyrim</h1>
+        <p>Scopri il fantastico mondo di The Elder Scrolls V: Skyrim, il gioco di ruolo epico che ha ridefinito il genere.</p>
+    </header>
+    <div class="container">
+        <div class="image-container" style="margin-bottom: 120px;">
+            <img src="../img/InitPages/Skyrim/immagine1.jpg" alt="Immagine di Skyrim 1">
+        </div>
+        <div class="image-container" style="margin-bottom: 120px;">
+            <img src="../img/InitPages/Skyrim/immagine2.gif" alt="Immagine di Skyrim 2">
+        </div>
+        <div class="description-container" style="font-size: 30px;">
+            <p>The Elder Scrolls V: Skyrim è un videogioco di ruolo sviluppato da Bethesda Game Studios. Questo capitolo della serie The Elder Scrolls offre un vasto mondo aperto da esplorare, pieno di missioni epiche, creature mitiche e misteri da svelare. Ambientato nella terra di Skyrim, il gioco consente ai giocatori di assumere il ruolo di Dragonborn, un eroe dotato del potere dei draghi, impegnato in una missione per salvare il mondo dall'annientamento. La grafica mozzafiato, la ricca narrazione e le infinite possibilità di personalizzazione hanno fatto di Skyrim un titolo iconico nel panorama dei giochi di ruolo. 
+                Clicca <a href="https://elderscrolls.bethesda.net/en/skyrim" target="_blank">qui</a> per maggiori informazioni.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
